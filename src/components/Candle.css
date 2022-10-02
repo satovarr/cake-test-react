@@ -1,0 +1,44 @@
+.candle {
+  position:absolute; 
+  width: 15px;
+  height:70px;
+  background-color: white;
+  top:-200px;
+  box-shadow:inset 0 -10px 0 #E74C3C;
+  overflow: hidden;
+}
+
+.candle:before {
+  position:absolute;
+  width:15px;
+  height:15px;
+  background-color:#E74C3C;
+  content:"";
+  top:10px;
+  box-shadow: 0 25px #E74C3C;
+}
+
+.candle:after {
+  content:"";
+  width:2px;
+  height:15px;
+  content:"";
+  position:absolute;
+  background-color:black;
+  top:-15px;
+  left:6px;
+}
+
+.flame {
+  position:absolute;
+  background-color: #F4D03F;
+  opacity:0.9;
+  box-shadow:inset 0 -5px 5px #D35400, 5px -5px 20px #FBFFA3;
+  width:20px;
+  height:30px;
+  top:-240px;
+  border-radius:50%;
+  left:128px;
+  animation: flame 0.5s infinite;
+    
+}
