@@ -2,12 +2,7 @@ import Candle from './Candle.jsx';
 import "./Cake.css";
 
 
-const Cake = ({ blownCandles, age, candles }) => {
-  
-  const renderCandles = () => (
-    blownCandles.map((candle, i) =>
-      <Candle key={i} blown={candle} age={age} candleIndex={i} size={candles[i]} />
-      ))
+const Cake = () => {
 
   return (
     <div className="birthday-cake">
@@ -17,8 +12,7 @@ const Cake = ({ blownCandles, age, candles }) => {
         <div className="chocolate"></div>
       </div>
       <div>
-        {// render the dandles here
-        renderCandles()
+        {// render the Candles here
         }
       </div>
     </div>
